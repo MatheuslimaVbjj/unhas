@@ -17,7 +17,6 @@ if (navToggle && siteNav) {
 }
 
 const revealEls = document.querySelectorAll('.reveal');
-
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -27,7 +26,7 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.16 }
+  { threshold: 0.15 }
 );
 
 revealEls.forEach((el) => revealObserver.observe(el));
@@ -47,7 +46,7 @@ function buildMessage(formData) {
     `Olá, Andreia! O meu nome é ${nome}.`,
     `Gostaria de pedir informações / marcar o serviço: ${servico}.`,
     data ? `Data pretendida: ${data}.` : '',
-    detalhes ? `Detalhes / inspiração: ${detalhes}` : '',
+    detalhes ? `Inspiração / detalhes: ${detalhes}` : '',
     'Pode indicar disponibilidade, por favor?'
   ]
     .filter(Boolean)

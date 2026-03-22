@@ -1,48 +1,24 @@
-# Andreia Alves — Site v2
-
-Esta é a versão 2 do site institucional da Andreia Alves.
+# Andreia Alves — site v3
 
 ## O que foi melhorado
+- Hero com vídeo local incluído no projeto (`assets/hero.mp4`)
+- UX/UI mais profissional e menos vazia
+- Portfólio com fotos e reel reais via embeds públicos do Instagram
+- Serviços reposicionados com linguagem mais premium
+- Fluxo de pré-agendamento mantido e polido
 
-- design mais premium e editorial
-- hero mais forte
-- blocos de serviço mais comerciais
-- galeria mais elegante
-- melhor contraste visual e hierarquia tipográfica
-- secção de diferenciais
-- pré-agendamento refinado
-- navegação mobile melhorada
+## Nota importante sobre as fotos
+Nesta versão, as fotos reais entram via Instagram embed. Isso resolve o problema visual imediato e coloca trabalhos reais no site.
 
-## Antes de publicar
+Se quiser a versão final mais premium possível, o ideal é substituir os embeds por imagens locais otimizadas.
+Para isso, basta enviar:
+- 1 foto da Andreia
+- 5 a 8 fotos de unhas em alta
+- 1 ou 2 vídeos curtos do serviço
 
-1. Trocar os placeholders da galeria por fotos reais do Instagram.
-2. Inserir retrato da Andreia na hero ou na galeria.
-3. Adicionar WhatsApp, morada e horário real.
-4. Se houver agenda online, substituir o fluxo de Instagram por link direto.
-5. Atualizar textos dos serviços com nomes/preços finais.
-
-## Onde editar
-
-- `index.html` -> estrutura e textos
-- `assets/styles.css` -> cores, layout e estilo
-- `assets/script.js` -> menu e pré-agendamento
-
-## Sugestão visual para as fotos
-
-Use esta ordem:
-
-- Hero: retrato profissional ou close-up muito forte das unhas
-- Galeria 1: alongamento natural
-- Galeria 2: nail art delicada
-- Galeria 3: antes e depois
-- Galeria 4: retrato da Andreia
-- Galeria 5: ambiente / bancada / materiais
-
-## Publicação rápida
-
-Pode subir estes ficheiros diretamente para:
-
-- Netlify
-- Vercel
-- GitHub Pages
-- cPanel / hospedagem comum
+## Próximos ajustes recomendados
+- Adicionar WhatsApp oficial
+- Adicionar morada exata / horário
+- Definir preços ou “desde”
+- Trocar embeds por galeria local otimizada
+- Publicar em domínio próprio
