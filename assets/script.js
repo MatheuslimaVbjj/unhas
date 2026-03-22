@@ -1,94 +1,100 @@
 const navToggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.site-nav');
+const siteNav = document.querySelector('.site-nav');
 
-if (navToggle && nav) {
+if (navToggle && siteNav) {
   navToggle.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('is-open');
-    navToggle.setAttribute('aria-expanded', String(isOpen));
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!expanded));
+    siteNav.classList.toggle('is-open');
   });
 
-  nav.querySelectorAll('a').forEach((link) => {
+  siteNav.querySelectorAll('a').forEach((link) => {
     link.addEventListener('click', () => {
-      nav.classList.remove('is-open');
+      siteNav.classList.remove('is-open');
       navToggle.setAttribute('aria-expanded', 'false');
     });
   });
 }
 
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver(
+const revealEls = document.querySelectorAll('.reveal');
+
+const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
+        revealObserver.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0.16 }
 );
 
-reveals.forEach((item) => observer.observe(item));
+revealEls.forEach((el) => revealObserver.observe(el));
 
 const bookingForm = document.getElementById('bookingForm');
-const output = document.getElementById('messageOutput');
-const copyButton = document.getElementById('copyMessage');
-const instagramUrl = 'https://www.instagram.com/andreiaalves_unhass/';
+const messageOutput = document.getElementById('messageOutput');
+const copyMessageButton = document.getElementById('copyMessage');
+const instagramProfile = 'https://www.instagram.com/andreiaalves_unhass/';
 
-function generateMessage(formData) {
-  const nome = formData.get('nome')?.trim() || 'Olá';
+function buildMessage(formData) {
+  const nome = formData.get('nome')?.trim() || 'Cliente';
   const servico = formData.get('servico')?.trim() || 'serviço';
   const data = formData.get('data')?.trim();
   const detalhes = formData.get('detalhes')?.trim();
 
-  const linhas = [
-    `Olá Andreia! O meu nome é ${nome}.`,
-    `Gostaria de marcar o serviço: ${servico}.`
-  ];
-
-  if (data) {
-    linhas.push(`Data/horário pretendido: ${data}.`);
-  }
-
-  if (detalhes) {
-    linhas.push(`Detalhes/inspiração: ${detalhes}.`);
-  }
-
-  linhas.push('Pode indicar disponibilidade, por favor? Obrigada!');
-  return linhas.join('\n');
+  return [
+    `Olá, Andreia! O meu nome é ${nome}.`,
+    `Gostaria de pedir informações / marcar o serviço: ${servico}.`,
+    data ? `Data pretendida: ${data}.` : '',
+    detalhes ? `Detalhes / inspiração: ${detalhes}` : '',
+    'Pode indicar disponibilidade, por favor?'
+  ]
+    .filter(Boolean)
+    .join('\n');
 }
 
-if (bookingForm && output) {
-  bookingForm.addEventListener('submit', (event) => {
+if (bookingForm && messageOutput) {
+  bookingForm.addEventListener('submit', async (event) => {
     event.preventDefault();
-    const formData = new FormData(bookingForm);
-    const message = generateMessage(formData);
-    output.value = message;
-    output.focus();
-    output.select();
 
-    navigator.clipboard?.writeText(message).catch(() => {});
-    window.open(instagramUrl, '_blank', 'noopener');
+    const formData = new FormData(bookingForm);
+    const message = buildMessage(formData);
+    messageOutput.value = message;
+
+    try {
+      await navigator.clipboard.writeText(message);
+      copyMessageButton.textContent = 'Mensagem copiada';
+      setTimeout(() => {
+        copyMessageButton.textContent = 'Copiar mensagem';
+      }, 2200);
+    } catch (error) {
+      copyMessageButton.textContent = 'Copie manualmente';
+      setTimeout(() => {
+        copyMessageButton.textContent = 'Copiar mensagem';
+      }, 2200);
+    }
+
+    window.open(instagramProfile, '_blank', 'noopener,noreferrer');
   });
 }
 
-if (copyButton && output) {
-  copyButton.addEventListener('click', async () => {
-    if (!output.value.trim()) {
-      output.value = 'Preencha o formulário e clique em “Gerar mensagem”.';
+if (copyMessageButton && messageOutput) {
+  copyMessageButton.addEventListener('click', async () => {
+    if (!messageOutput.value.trim()) {
+      messageOutput.focus();
       return;
     }
 
     try {
-      await navigator.clipboard.writeText(output.value);
-      const previous = copyButton.textContent;
-      copyButton.textContent = 'Copiado';
-      setTimeout(() => {
-        copyButton.textContent = previous;
-      }, 1500);
-    } catch {
-      output.select();
-      document.execCommand('copy');
+      await navigator.clipboard.writeText(messageOutput.value);
+      copyMessageButton.textContent = 'Mensagem copiada';
+    } catch (error) {
+      copyMessageButton.textContent = 'Copie manualmente';
     }
+
+    setTimeout(() => {
+      copyMessageButton.textContent = 'Copiar mensagem';
+    }, 2200);
   });
 }

@@ -3,20 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Andreia Alves | Nail Studio</title>
+    <title>Andreia Alves | Nail Designer em Sintra</title>
     <meta
       name="description"
-      content="Andreia Alves é especialista em alongamento de unhas, com foco em unhas naturais e elegantes. Site institucional premium para marcação via Instagram."
+      content="Andreia Alves é especialista em alongamento de unhas com foco em resultados naturais, elegantes e duradouros. Site premium para apresentação de serviços e marcação."
     />
-    <meta name="theme-color" content="#f7efe9" />
-    <meta property="og:title" content="Andreia Alves | Nail Studio" />
-    <meta
-      property="og:description"
-      content="Unhas naturais, elegantes e pensadas ao detalhe. Atendimento em Sintra com experiência premium e marcação online."
-    />
+    <meta name="theme-color" content="#f4ece7" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_PT" />
-    <link rel="preconnect" href="https://www.instagram.com" />
+    <meta property="og:title" content="Andreia Alves | Nail Designer em Sintra" />
+    <meta
+      property="og:description"
+      content="Unhas naturais, elegantes e com acabamento premium. Atendimento em Sintra com marcação pelo Instagram."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/styles.css" />
     <script type="application/ld+json">
       {
@@ -31,402 +36,397 @@
     </script>
   </head>
   <body>
-    <div class="page-shell">
-      <header class="site-header" id="topo">
-        <div class="container nav-wrap">
-          <a class="brand" href="#topo" aria-label="Andreia Alves - voltar ao topo">
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="topo">
+      <div class="container nav-row">
+        <a class="brand" href="#topo" aria-label="Andreia Alves - voltar ao topo">
+          <span class="brand-mark">AA</span>
+          <span class="brand-copy">
+            <strong>Andreia Alves</strong>
+            <small>Nail Designer</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-menu">
+          <a href="#servicos">Serviços</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#faq">FAQ</a>
+          <a class="btn btn-nav" href="#marcar">Agendar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Atendimento em Sintra</p>
+            <h1>Unhas elegantes com acabamento fino, natural e memorável.</h1>
+            <p class="hero-text">
+              Um site criado para posicionar a Andreia Alves como referência em alongamento e design de unhas,
+              com estética premium, navegação simples e foco total em conversão.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#marcar">Fazer pré-agendamento</a>
+              <a class="btn btn-secondary" href="https://www.instagram.com/andreiaalves_unhass/" target="_blank" rel="noreferrer">Abrir Instagram</a>
+            </div>
+
+            <ul class="hero-points" aria-label="Destaques do estúdio">
+              <li>Alongamento com aspeto natural</li>
+              <li>Nail art delicada e sofisticada</li>
+              <li>Experiência premium do início ao fim</li>
+            </ul>
+          </div>
+
+          <div class="hero-stage reveal delay-1" aria-hidden="true">
+            <div class="stage-card stage-card-tall">
+              <div class="photo-mock photo-main">
+                <span>Inserir foto real da Andreia ou close-up premium</span>
+              </div>
+            </div>
+            <div class="stage-card stage-card-note">
+              <p class="mini-label">Posicionamento</p>
+              <strong>Natural. Elegante. Preciso.</strong>
+              <span>Mensagem pensada para atrair a cliente certa.</span>
+            </div>
+            <div class="stage-card stage-card-service">
+              <p class="mini-label">Serviço assinatura</p>
+              <strong>Alongamento + manutenção</strong>
+              <span>Estrutura pronta para destacar o carro-chefe da marca.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="value-strip section section-tight">
+        <div class="container value-grid">
+          <article class="value-card reveal">
+            <span class="value-label">Design</span>
+            <h2>Estética calma e premium</h2>
+            <p>Um visual sofisticado, feminino e mais adulto, sem parecer genérico.</p>
+          </article>
+          <article class="value-card reveal delay-1">
+            <span class="value-label">Conversão</span>
+            <h2>CTAs sempre por perto</h2>
+            <p>Botões de agendamento distribuídos ao longo da página para reduzir fricção.</p>
+          </article>
+          <article class="value-card reveal delay-2">
+            <span class="value-label">Facilidade</span>
+            <h2>Pronto para editar</h2>
+            <p>Os textos e espaços de foto estão organizados para atualização rápida antes da publicação.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section intro-band">
+        <div class="container intro-grid">
+          <div>
+            <p class="eyebrow">Direção criativa</p>
+            <h2>Uma mistura de sofisticação, serenidade e apelo comercial.</h2>
+          </div>
+          <p>
+            O conceito junta hero forte, apresentação clara de serviços, narrativa de marca,
+            galeria inspiracional e um fluxo de marcação simples — tudo adaptado para uma nail designer independente.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="servicos">
+        <div class="container section-head">
+          <p class="eyebrow">Serviços</p>
+          <h2>Estruturado para vender o que mais interessa.</h2>
+          <p>
+            Organizei os serviços em formato limpo, premium e fácil de ler no telemóvel.
+            Pode ajustar nomes, descrições e preços quando quiser.
+          </p>
+        </div>
+
+        <div class="container services-grid">
+          <article class="service-card reveal">
+            <span class="service-number">01</span>
+            <h3>Alongamento em fibra</h3>
+            <p>Para quem quer comprimento, leveza visual e estrutura resistente com acabamento elegante.</p>
+            <small>Sob consulta</small>
+          </article>
+          <article class="service-card reveal delay-1">
+            <span class="service-number">02</span>
+            <h3>Manutenção</h3>
+            <p>Correção do crescimento, reforço da estrutura e renovação do design sem perder sofisticação.</p>
+            <small>Sob consulta</small>
+          </article>
+          <article class="service-card reveal delay-2">
+            <span class="service-number">03</span>
+            <h3>Blindagem da unha natural</h3>
+            <p>Proteção e durabilidade para valorizar a unha natural com brilho e aparência cuidada.</p>
+            <small>Sob consulta</small>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <h3>Esmaltação em gel</h3>
+            <p>Brilho intenso e rotina prática para clientes que querem mãos sempre impecáveis.</p>
+            <small>Sob consulta</small>
+          </article>
+          <article class="service-card reveal delay-1">
+            <span class="service-number">05</span>
+            <h3>Nail art delicada</h3>
+            <p>Detalhes subtis e personalizados para criar um resultado mais autoral e exclusivo.</p>
+            <small>Sob consulta</small>
+          </article>
+          <article class="service-card reveal delay-2">
+            <span class="service-number">06</span>
+            <h3>Remoção segura</h3>
+            <p>Processo pensado para preservar a saúde da unha e preparar a próxima aplicação com cuidado.</p>
+            <small>Sob consulta</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-section" id="galeria">
+        <div class="container section-head section-head-inline">
+          <div>
+            <p class="eyebrow">Galeria</p>
+            <h2>Pronta para receber as melhores fotos do Instagram.</h2>
+          </div>
+          <p>
+            Como não consegui puxar automaticamente as imagens do Instagram neste ambiente,
+            deixei espaços pensados para close-ups, resultados e retrato profissional.
+          </p>
+        </div>
+
+        <div class="container gallery-grid">
+          <figure class="gallery-card gallery-card-lg reveal">
+            <div class="gallery-photo gallery-a">
+              <span>Substituir por foto real</span>
+              <strong>Alongamento com acabamento natural</strong>
+            </div>
+            <figcaption>Use uma foto com boa luz e detalhe de acabamento.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal delay-1">
+            <div class="gallery-photo gallery-b">
+              <span>Substituir por foto real</span>
+              <strong>Nail art delicada</strong>
+            </div>
+            <figcaption>Ideal para mostrar assinatura estética.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal delay-2">
+            <div class="gallery-photo gallery-c">
+              <span>Substituir por foto real</span>
+              <strong>Antes e depois</strong>
+            </div>
+            <figcaption>Ótimo para reforçar técnica e transformação.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal">
+            <div class="gallery-photo gallery-d">
+              <span>Substituir por foto real</span>
+              <strong>Retrato da Andreia</strong>
+            </div>
+            <figcaption>Humaniza a marca e aumenta confiança.</figcaption>
+          </figure>
+          <figure class="gallery-card reveal delay-1">
+            <div class="gallery-photo gallery-e">
+              <span>Substituir por foto real</span>
+              <strong>Bastidores / ambiente</strong>
+            </div>
+            <figcaption>Ajuda a comunicar higiene, cuidado e experiência.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section about-section" id="sobre">
+        <div class="container about-grid">
+          <div class="about-copy reveal">
+            <p class="eyebrow">Sobre a Andreia</p>
+            <h2>Uma marca pessoal com presença mais forte, elegante e profissional.</h2>
+            <p>
+              Esta versão do site foi desenhada para valorizar o nome da Andreia Alves,
+              não apenas como um perfil de Instagram, mas como uma especialista com identidade própria.
+            </p>
+            <p>
+              A navegação foi pensada para o comportamento real da cliente: descobrir o trabalho,
+              perceber rapidamente o estilo da profissional e clicar para agendar sem distrações.
+            </p>
+          </div>
+
+          <div class="about-stack">
+            <article class="about-card reveal delay-1">
+              <h3>Mensagem certa</h3>
+              <p>Fala com quem procura unhas naturais, elegantes e serviço cuidadoso.</p>
+            </article>
+            <article class="about-card reveal delay-2">
+              <h3>Visual coerente</h3>
+              <p>Tipografia refinada, blocos limpos e uma paleta suave com presença premium.</p>
+            </article>
+            <article class="about-card reveal">
+              <h3>Fácil de escalar</h3>
+              <p>Pronto para receber WhatsApp, agenda online, preços e galeria real.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section highlights-section">
+        <div class="container section-head">
+          <p class="eyebrow">Diferenciais</p>
+          <h2>O que este site já comunica sem esforço.</h2>
+        </div>
+        <div class="container highlights-grid">
+          <article class="highlight-card reveal">
+            <h3>Autoridade</h3>
+            <p>O layout posiciona a Andreia como especialista em vez de parecer apenas uma página social.</p>
+          </article>
+          <article class="highlight-card reveal delay-1">
+            <h3>Confiança</h3>
+            <p>FAQ, serviços, narrativa e contato visível diminuem dúvidas antes da marcação.</p>
+          </article>
+          <article class="highlight-card reveal delay-2">
+            <h3>Valor percebido</h3>
+            <p>Uma estética mais premium ajuda a sustentar preço e atrair o perfil de cliente certo.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section booking-section" id="marcar">
+        <div class="container booking-grid">
+          <div class="booking-copy reveal">
+            <p class="eyebrow">Pré-agendamento</p>
+            <h2>Gere a mensagem, copie e envie com um clique.</h2>
+            <p>
+              Como ainda não tenho o WhatsApp nem uma agenda online da Andreia,
+              deixei um fluxo simples: a cliente preenche, copia a mensagem e o Instagram abre em seguida.
+            </p>
+            <ul class="booking-points">
+              <li>Mais rápido no telemóvel</li>
+              <li>Não depende de backend</li>
+              <li>Fácil de trocar por WhatsApp depois</li>
+            </ul>
+          </div>
+
+          <form class="booking-form reveal delay-1" id="bookingForm">
+            <label>
+              Nome
+              <input type="text" name="nome" placeholder="O seu nome" required />
+            </label>
+            <label>
+              Serviço
+              <select name="servico" required>
+                <option value="">Selecione</option>
+                <option>Alongamento em fibra</option>
+                <option>Manutenção</option>
+                <option>Blindagem da unha natural</option>
+                <option>Esmaltação em gel</option>
+                <option>Nail art delicada</option>
+                <option>Remoção segura</option>
+              </select>
+            </label>
+            <label>
+              Data pretendida
+              <input type="text" name="data" placeholder="Ex: sexta à tarde" />
+            </label>
+            <label>
+              Inspiração / detalhes
+              <textarea name="detalhes" rows="4" placeholder="Ex: formato almond, tons nude, efeito natural..."></textarea>
+            </label>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Gerar mensagem</button>
+              <button class="btn btn-secondary" type="button" id="copyMessage">Copiar mensagem</button>
+            </div>
+
+            <label>
+              Mensagem pronta
+              <textarea id="messageOutput" rows="6" readonly placeholder="A mensagem gerada vai aparecer aqui."></textarea>
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="faq">
+        <div class="container section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Perguntas frequentes para reduzir objeções.</h2>
+        </div>
+
+        <div class="container faq-list">
+          <details class="faq-item reveal" open>
+            <summary>Qual serviço escolher para um efeito natural?</summary>
+            <p>O alongamento com acabamento delicado ou a blindagem costumam ser as opções mais alinhadas com um visual elegante e leve.</p>
+          </details>
+          <details class="faq-item reveal delay-1">
+            <summary>Com que frequência devo fazer manutenção?</summary>
+            <p>Normalmente depende do crescimento da unha e da rotina da cliente. Pode ajustar este texto com a recomendação exata da Andreia.</p>
+          </details>
+          <details class="faq-item reveal delay-2">
+            <summary>Posso enviar foto de inspiração?</summary>
+            <p>Sim. A secção de pré-agendamento já incentiva a cliente a descrever cor, formato e referência visual antes da marcação.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Como é feita a marcação?</summary>
+            <p>Nesta versão, a marcação acontece pelo Instagram. O site está pronto para receber link de WhatsApp ou plataforma de booking mais tarde.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section final-cta">
+        <div class="container cta-panel reveal">
+          <p class="eyebrow">Versão pronta para acabamento final</p>
+          <h2>Agora faltam só as fotos reais, contactos finais e publicar.</h2>
+          <p>
+            A base já está profissional, consistente e com cara de marca.
+            O próximo passo é substituir os placeholders pelas melhores imagens da Andreia.
+          </p>
+          <div class="hero-actions center">
+            <a class="btn btn-primary" href="https://www.instagram.com/andreiaalves_unhass/" target="_blank" rel="noreferrer">Abrir Instagram</a>
+            <a class="btn btn-secondary" href="#topo">Voltar ao topo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#topo">
             <span class="brand-mark">AA</span>
-            <span class="brand-text">
+            <span class="brand-copy">
               <strong>Andreia Alves</strong>
-              <small>Nail Studio</small>
+              <small>Nail Designer</small>
             </span>
           </a>
-
-          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
-            <span></span>
-            <span></span>
-          </button>
-
-          <nav class="site-nav" id="menu">
-            <a href="#servicos">Serviços</a>
-            <a href="#portfolio">Portfólio</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#faq">FAQ</a>
-            <a class="nav-cta" href="https://www.instagram.com/andreiaalves_unhass/" target="_blank" rel="noreferrer">Agendar</a>
-          </nav>
+          <p class="footer-text">
+            Conceito web premium para captação de clientes, apresentação de serviços e fortalecimento de marca pessoal.
+          </p>
         </div>
-      </header>
 
-      <main>
-        <section class="hero section">
-          <div class="container hero-grid">
-            <div class="hero-copy">
-              <p class="eyebrow">Atendimento premium em Sintra</p>
-              <h1>Unhas naturais, elegantes e com acabamento impecável.</h1>
-              <p class="hero-text">
-                Especialista em alongamento e design de unhas para mulheres que procuram delicadeza,
-                durabilidade e uma experiência cuidada do início ao fim.
-              </p>
-
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="https://www.instagram.com/andreiaalves_unhass/" target="_blank" rel="noreferrer">Agendar pelo Instagram</a>
-                <a class="btn btn-secondary" href="#servicos">Ver serviços</a>
-              </div>
-
-              <ul class="trust-points" aria-label="Destaques do estúdio">
-                <li>Alongamento com aspeto natural</li>
-                <li>Design elegante e delicado</li>
-                <li>Atendimento pensado ao detalhe</li>
-              </ul>
-            </div>
-
-            <div class="hero-visual" aria-hidden="true">
-              <div class="hero-card hero-card-main reveal">
-                <span class="card-badge">Assinatura da marca</span>
-                <h2>Natural beauty, elevated.</h2>
-                <p>Um site com estética premium, foco em marcação e espaço para mostrar o melhor do trabalho da Andreia.</p>
-              </div>
-              <div class="hero-card hero-card-small reveal delay-1">
-                <strong>Foco principal</strong>
-                <span>Alongamento · manutenção · nail art delicada</span>
-              </div>
-              <div class="hero-card hero-card-small reveal delay-2">
-                <strong>Canal principal</strong>
-                <span>Instagram + pré-agendamento inteligente</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="metrics section section-tight">
-          <div class="container metrics-grid">
-            <article class="metric-card reveal">
-              <span class="metric-label">Posicionamento</span>
-              <strong>Especialista em alongamento</strong>
-              <p>Comunicação orientada para quem valoriza unhas naturais e elegantes.</p>
-            </article>
-            <article class="metric-card reveal delay-1">
-              <span class="metric-label">Experiência</span>
-              <strong>Atendimento premium</strong>
-              <p>Visual sofisticado, navegação simples e chamadas de ação claras para converter visitas em marcações.</p>
-            </article>
-            <article class="metric-card reveal delay-2">
-              <span class="metric-label">Estrutura</span>
-              <strong>Pronta para publicar</strong>
-              <p>Site responsivo, rápido, sem dependências pesadas e com áreas prontas para inserir fotos reais.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section signature-band">
-          <div class="container signature-grid">
-            <div>
-              <p class="eyebrow">A melhor mistura das referências</p>
-              <h2>Um visual sereno, sofisticado e comercial.</h2>
-            </div>
-            <p>
-              O layout junta atmosfera premium, narrativa pessoal, galeria de resultados, secção de serviços em cards e CTAs de marcação constantes — tudo adaptado para a realidade de um nail studio independente.
-            </p>
-          </div>
-        </section>
-
-        <section class="section" id="servicos">
-          <div class="container section-head">
-            <p class="eyebrow">Serviços</p>
-            <h2>Estrutura preparada para vender os serviços certos.</h2>
-            <p>
-              Os nomes abaixo foram organizados para apresentar a Andreia como especialista em unhas elegantes.
-              Pode trocar ou ajustar qualquer serviço em menos de 2 minutos.
-            </p>
-          </div>
-
-          <div class="container services-grid">
-            <article class="service-card reveal">
-              <span class="service-index">01</span>
-              <h3>Alongamento em fibra</h3>
-              <p>Ideal para quem quer mais comprimento, resistência e um acabamento fino e natural.</p>
-            </article>
-            <article class="service-card reveal delay-1">
-              <span class="service-index">02</span>
-              <h3>Manutenção</h3>
-              <p>Correção de crescimento, reforço da estrutura e renovação do design para manter a unha impecável.</p>
-            </article>
-            <article class="service-card reveal delay-2">
-              <span class="service-index">03</span>
-              <h3>Blindagem da unha natural</h3>
-              <p>Mais proteção e durabilidade para quem prefere valorizar a unha natural com aparência cuidada.</p>
-            </article>
-            <article class="service-card reveal">
-              <span class="service-index">04</span>
-              <h3>Esmaltação em gel</h3>
-              <p>Brilho intenso, secagem eficiente e duração superior para uma rotina sem preocupações.</p>
-            </article>
-            <article class="service-card reveal delay-1">
-              <span class="service-index">05</span>
-              <h3>Nail art delicada</h3>
-              <p>Detalhes subtis, elegantes e personalizados para um resultado exclusivo e sofisticado.</p>
-            </article>
-            <article class="service-card reveal delay-2">
-              <span class="service-index">06</span>
-              <h3>Remoção e recuperação</h3>
-              <p>Procedimento pensado para preservar a saúde da unha e preparar a próxima aplicação com segurança.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section portfolio-section" id="portfolio">
-          <div class="container section-head section-head-inline">
-            <div>
-              <p class="eyebrow">Portfólio</p>
-              <h2>Espaço pronto para fotos reais do Instagram.</h2>
-            </div>
-            <p>
-              Nesta versão, deixei uma galeria visual elegante com marcadores claros para substituir pelas melhores fotos da Andreia.
-            </p>
-          </div>
-
-          <div class="container gallery-grid">
-            <figure class="gallery-card gallery-card-tall reveal">
-              <div class="gallery-placeholder">
-                <span>Substituir por foto real</span>
-                <strong>Alongamento com acabamento natural</strong>
-              </div>
-              <figcaption>Resultado premium com foco em elegância e precisão.</figcaption>
-            </figure>
-            <figure class="gallery-card reveal delay-1">
-              <div class="gallery-placeholder alt">
-                <span>Substituir por foto real</span>
-                <strong>Nail art delicada</strong>
-              </div>
-              <figcaption>Design feminino e subtil para mostrar variedade de estilos.</figcaption>
-            </figure>
-            <figure class="gallery-card reveal delay-2">
-              <div class="gallery-placeholder">
-                <span>Substituir por foto real</span>
-                <strong>Close-up de acabamento</strong>
-              </div>
-              <figcaption>Use macro de detalhes para passar sensação de qualidade.</figcaption>
-            </figure>
-            <figure class="gallery-card reveal">
-              <div class="gallery-placeholder alt">
-                <span>Substituir por foto real</span>
-                <strong>Antes e depois</strong>
-              </div>
-              <figcaption>Ótimo para reforçar autoridade e técnica.</figcaption>
-            </figure>
-            <figure class="gallery-card reveal delay-1">
-              <div class="gallery-placeholder">
-                <span>Substituir por foto real</span>
-                <strong>Foto da Andreia</strong>
-              </div>
-              <figcaption>Pode usar retrato profissional da Andreia para humanizar a marca.</figcaption>
-            </figure>
-            <figure class="gallery-card reveal delay-2">
-              <div class="gallery-placeholder alt">
-                <span>Substituir por foto real</span>
-                <strong>Ambiente ou bastidores</strong>
-              </div>
-              <figcaption>Ajuda a transmitir cuidado, higiene e experiência premium.</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="section split-section" id="sobre">
-          <div class="container split-grid">
-            <div class="split-copy">
-              <p class="eyebrow">Sobre a marca</p>
-              <h2>Uma identidade construída para valorizar a Andreia e o seu trabalho.</h2>
-              <p>
-                Em vez de parecer um salão genérico, este site posiciona a Andreia como uma profissional de confiança,
-                com assinatura visual própria e foco num estilo elegante.
-              </p>
-              <p>
-                A página foi desenhada para funcionar muito bem no telemóvel, porque a maioria das clientes vai chegar por Instagram,
-                ver rapidamente os serviços e clicar para marcar.
-              </p>
-            </div>
-
-            <div class="feature-stack">
-              <article class="feature-card reveal">
-                <h3>Mensagem clara</h3>
-                <p>Quem entra no site percebe logo o posicionamento: unhas naturais, elegantes e experiência premium.</p>
-              </article>
-              <article class="feature-card reveal delay-1">
-                <h3>Conversão simples</h3>
-                <p>CTAs distribuídos pela página, pré-agendamento rápido e acesso direto ao Instagram.</p>
-              </article>
-              <article class="feature-card reveal delay-2">
-                <h3>Atualização fácil</h3>
-                <p>Texto organizado, secções independentes e galeria simples para trocar fotos sem refazer o layout.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section process-section">
-          <div class="container section-head">
-            <p class="eyebrow">Como funciona</p>
-            <h2>Um fluxo simples para transformar visita em marcação.</h2>
-          </div>
-
-          <div class="container process-grid">
-            <article class="process-card reveal">
-              <span>1</span>
-              <h3>Escolha o serviço</h3>
-              <p>A cliente identifica rapidamente o que procura sem se perder no site.</p>
-            </article>
-            <article class="process-card reveal delay-1">
-              <span>2</span>
-              <h3>Envia a referência</h3>
-              <p>Pode partilhar ideia, cor, formato e data pretendida no pré-agendamento.</p>
-            </article>
-            <article class="process-card reveal delay-2">
-              <span>3</span>
-              <h3>Recebe resposta</h3>
-              <p>A Andreia responde no Instagram com disponibilidade e confirmação.</p>
-            </article>
-            <article class="process-card reveal">
-              <span>4</span>
-              <h3>Volta para manutenção</h3>
-              <p>O site também apoia retenção com secções de manutenção e FAQ bem visíveis.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section booking-section" id="pre-agendamento">
-          <div class="container booking-grid">
-            <div class="booking-copy">
-              <p class="eyebrow">Pré-agendamento</p>
-              <h2>Gere uma mensagem pronta, copie e envie pelo Instagram.</h2>
-              <p>
-                Como ainda não tenho o WhatsApp e outros dados da Andreia, criei uma solução elegante sem backend:
-                a visitante preenche os dados, o site monta a mensagem automaticamente e abre o perfil para envio manual.
-              </p>
-              <ul class="booking-list">
-                <li>Funciona no telemóvel</li>
-                <li>Não depende de formulário externo</li>
-                <li>Pode ser adaptado para WhatsApp em segundos</li>
-              </ul>
-            </div>
-
-            <form class="booking-form" id="bookingForm">
-              <label>
-                Nome
-                <input type="text" name="nome" placeholder="O seu nome" required />
-              </label>
-              <label>
-                Serviço
-                <select name="servico" required>
-                  <option value="">Selecione</option>
-                  <option>Alongamento em fibra</option>
-                  <option>Manutenção</option>
-                  <option>Blindagem da unha natural</option>
-                  <option>Esmaltação em gel</option>
-                  <option>Nail art delicada</option>
-                  <option>Remoção</option>
-                </select>
-              </label>
-              <label>
-                Data pretendida
-                <input type="text" name="data" placeholder="Ex: terça à tarde" />
-              </label>
-              <label>
-                Inspiração / detalhes
-                <textarea name="detalhes" rows="4" placeholder="Ex: formato almond, tons nude, efeito natural..."></textarea>
-              </label>
-              <div class="form-actions">
-                <button class="btn btn-primary" type="submit">Gerar mensagem</button>
-                <button class="btn btn-secondary" type="button" id="copyMessage">Copiar</button>
-              </div>
-              <label>
-                Mensagem pronta
-                <textarea id="messageOutput" rows="6" readonly placeholder="A mensagem gerada vai aparecer aqui."></textarea>
-              </label>
-            </form>
-          </div>
-        </section>
-
-        <section class="section faq-section" id="faq">
-          <div class="container section-head">
-            <p class="eyebrow">FAQ</p>
-            <h2>Perguntas frequentes prontas para reduzir dúvidas antes da marcação.</h2>
-          </div>
-
-          <div class="container faq-list">
-            <details class="faq-item reveal" open>
-              <summary>Qual serviço escolher se quero um efeito natural?</summary>
-              <p>Para quem quer comprimento e delicadeza, o alongamento com acabamento natural é a melhor escolha. Para reforçar a unha natural, a blindagem costuma ser ideal.</p>
-            </details>
-            <details class="faq-item reveal delay-1">
-              <summary>De quanto em quanto tempo devo fazer manutenção?</summary>
-              <p>Em regra, a manutenção é feita conforme o crescimento da unha e o estilo de rotina da cliente. Esta secção pode ser ajustada com a recomendação exata da Andreia.</p>
-            </details>
-            <details class="faq-item reveal delay-2">
-              <summary>Posso enviar uma inspiração antes?</summary>
-              <p>Sim. O site já incentiva a cliente a enviar formato, cor e referência visual para facilitar o orçamento e a marcação.</p>
-            </details>
-            <details class="faq-item reveal">
-              <summary>Como faço a marcação?</summary>
-              <p>Nesta versão, a marcação principal acontece pelo Instagram. Também deixei a estrutura pronta para ligar um botão de WhatsApp ou Fresha no futuro.</p>
-            </details>
-          </div>
-        </section>
-
-        <section class="section cta-section">
-          <div class="container cta-box reveal">
-            <p class="eyebrow">Pronta para converter melhor</p>
-            <h2>Um site que vende sofisticação, confiança e resultado.</h2>
-            <p>
-              A base está pronta. Basta trocar as fotos placeholder pelas imagens reais da Andreia, adicionar contactos finais e publicar.
-            </p>
-            <div class="hero-actions centered">
-              <a class="btn btn-primary" href="https://www.instagram.com/andreiaalves_unhass/" target="_blank" rel="noreferrer">Abrir Instagram</a>
-              <a class="btn btn-secondary" href="#pre-agendamento">Testar pré-agendamento</a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container footer-grid">
-          <div>
-            <a class="brand footer-brand" href="#topo">
-              <span class="brand-mark">AA</span>
-              <span class="brand-text">
-                <strong>Andreia Alves</strong>
-                <small>Nail Studio</small>
-              </span>
-            </a>
-            <p class="footer-note">
-              Site conceptual criado para posicionamento premium, captação de clientes e apresentação profissional dos serviços.
-            </p>
-          </div>
-
-          <div>
-            <h3>Links rápidos</h3>
-            <ul>
-              <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#portfolio">Portfólio</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h3>Contacto</h3>
-            <ul>
-              <li><a href="https://www.instagram.com/andreiaalves_unhass/" target="_blank" rel="noreferrer">Instagram</a></li>
-              <li><span>Sintra · Portugal</span></li>
-              <li><span>Adicionar WhatsApp e morada final antes de publicar</span></li>
-            </ul>
-          </div>
+        <div>
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
         </div>
-      </footer>
 
-      <a class="floating-cta" href="https://www.instagram.com/andreiaalves_unhass/" target="_blank" rel="noreferrer" aria-label="Agendar pelo Instagram">
-        Instagram
-      </a>
-    </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/andreiaalves_unhass/" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><span>Sintra · Portugal</span></li>
+            <li><span>Adicionar WhatsApp e morada antes de publicar</span></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <a class="floating-book" href="#marcar" aria-label="Ir para pré-agendamento">Agendar</a>
 
     <script src="assets/script.js"></script>
   </body>
