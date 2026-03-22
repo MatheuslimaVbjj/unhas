@@ -1,0 +1,22 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#eed7d3"/>
+    <stop offset="1" stop-color="#bf8d96"/>
+  </linearGradient>
+  <filter id="blur">
+    <feGaussianBlur stdDeviation="30"/>
+  </filter>
+</defs>
+<rect width="1200" height="900" rx="42" fill="url(#g)"/>
+<circle cx="210" cy="190" r="150" fill="white" fill-opacity="0.26"/>
+<circle cx="1030" cy="210" r="130" fill="white" fill-opacity="0.18"/>
+<circle cx="980" cy="720" r="180" fill="white" fill-opacity="0.16"/>
+<circle cx="260" cy="720" r="120" fill="white" fill-opacity="0.12"/>
+<g filter="url(#blur)">
+  <path d="M725 156C838 184 951 267 971 399C991 531 903 658 775 706C647 754 447 737 345 640C243 543 240 397 310 297C380 197 612 128 725 156Z" fill="white" fill-opacity="0.18"/>
+</g>
+<rect x="86" y="696" width="1028" height="118" rx="30" fill="rgba(255,255,255,0.2)"/>
+<text x="120" y="752" font-family="Inter, Arial, sans-serif" font-size="24" fill="white" fill-opacity="0.85">SUBSTITUIR PELO CONTEÚDO REAL DO INSTAGRAM</text>
+<text x="120" y="790" font-family="Georgia, serif" font-size="54" fill="white">Foto destaque</text>
+</svg>
