@@ -28,8 +28,25 @@ const revealObserver = new IntersectionObserver(
   },
   { threshold: 0.15 }
 );
-
 revealEls.forEach((el) => revealObserver.observe(el));
+
+const chips = document.querySelectorAll('.filter-chip');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+chips.forEach((chip) => {
+  chip.addEventListener('click', () => {
+    const filter = chip.dataset.filter;
+
+    chips.forEach((item) => item.classList.remove('is-active'));
+    chip.classList.add('is-active');
+
+    portfolioItems.forEach((item) => {
+      const categories = item.dataset.category || '';
+      const shouldShow = filter === 'all' || categories.includes(filter);
+      item.hidden = !shouldShow;
+    });
+  });
+});
 
 const bookingForm = document.getElementById('bookingForm');
 const messageOutput = document.getElementById('messageOutput');
@@ -56,7 +73,6 @@ function buildMessage(formData) {
 if (bookingForm && messageOutput) {
   bookingForm.addEventListener('submit', async (event) => {
     event.preventDefault();
-
     const formData = new FormData(bookingForm);
     const message = buildMessage(formData);
     messageOutput.value = message;
@@ -64,15 +80,13 @@ if (bookingForm && messageOutput) {
     try {
       await navigator.clipboard.writeText(message);
       copyMessageButton.textContent = 'Mensagem copiada';
-      setTimeout(() => {
-        copyMessageButton.textContent = 'Copiar mensagem';
-      }, 2200);
     } catch (error) {
       copyMessageButton.textContent = 'Copie manualmente';
-      setTimeout(() => {
-        copyMessageButton.textContent = 'Copiar mensagem';
-      }, 2200);
     }
+
+    setTimeout(() => {
+      copyMessageButton.textContent = 'Copiar mensagem';
+    }, 2200);
 
     window.open(instagramProfile, '_blank', 'noopener,noreferrer');
   });

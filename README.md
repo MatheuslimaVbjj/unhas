@@ -1,24 +1,23 @@
-# Andreia Alves — site v3
+Andreia Alves — site v4
 
-## O que foi melhorado
-- Hero com vídeo local incluído no projeto (`assets/hero.mp4`)
-- UX/UI mais profissional e menos vazia
-- Portfólio com fotos e reel reais via embeds públicos do Instagram
-- Serviços reposicionados com linguagem mais premium
-- Fluxo de pré-agendamento mantido e polido
+O que esta versão já traz:
+- vídeo na home
+- layout premium mais profissional
+- portfólio real via embeds do Instagram
+- serviços mais bem organizados
+- CTA fixo no mobile
+- formulário de mensagem pronta para pré-agendamento
 
-## Nota importante sobre as fotos
-Nesta versão, as fotos reais entram via Instagram embed. Isso resolve o problema visual imediato e coloca trabalhos reais no site.
+Antes de publicar a versão final ideal:
+1. Trocar os embeds por 6 a 9 fotos em alta exportadas do Instagram.
+2. Adicionar WhatsApp real.
+3. Colocar morada/horário finais.
+4. Inserir uma foto da Andreia na secção Sobre.
+5. Se quiser, ligar a um domínio próprio.
 
-Se quiser a versão final mais premium possível, o ideal é substituir os embeds por imagens locais otimizadas.
-Para isso, basta enviar:
-- 1 foto da Andreia
-- 5 a 8 fotos de unhas em alta
-- 1 ou 2 vídeos curtos do serviço
-
-## Próximos ajustes recomendados
-- Adicionar WhatsApp oficial
-- Adicionar morada exata / horário
-- Definir preços ou “desde”
-- Trocar embeds por galeria local otimizada
-- Publicar em domínio próprio
+Arquivos principais:
+- index.html
+- assets/styles.css
+- assets/script.js
+- assets/hero.mp4
+- assets/hero-poster.jpg
